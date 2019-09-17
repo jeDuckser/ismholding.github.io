@@ -1,14 +1,15 @@
 <!doctype html>
-
 <html>
+
   <head>
     <link rel="stylesheet" href="lib/style.css">
     <script src="lib/script.js"></script>
   </head>
 
   <body>
-    <h1>Hello Plunker!</h1>
-    <img src="96088490-288-k137508.jpg" alt="альтернативный текст">
+    <h1>123</h1>
+    <img src="URL" alt="96088490-288-k137508.jpg">
   </body>
+  
 </html>
 
