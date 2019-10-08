@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Макросы</h1>
+    Итак, на уроке мы изучили что такое макрос. Макрос - это последовательность комманд, которые выполняет макрос при нажатии сочетания клавиш. Я сделал три макроса.
+    <br>
+    Первый макрос при нажатии клавиш ctrl+q вставляет некий текст 
+    <br>
+   <p> ActiveCell.FormulaR1C1 = "academia-excel.ru"<p/>
+<p>Range("P6").Select<p>
+<p>End Sub<p>
+Процесс создания макроса идёт таким образом: Сначала мы даём макросу имя, потом сочетания клавиш
+<p>Следующий макрос ищет и заменяет ключевые слова при нажатии ctrl+o<p/>
+<br>
+<p>Cells.Replace What:="црпоывра",<p/>
+<p>Replacement:="school", LookAt:= _ xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _ ReplaceFormat:=False<p/>
+<p>End Sub<p/>
+<br>
+<p>Механизм создания макроса аналогичный<p/>
+<br>
+<p>Следующий макрос делает весь текст зелёным и жирным при нажатии ctrl+g<p/>
+<p>Cells.Select<p/>
+<p>Selection.Font.Italic = True<p/>
+<p>Range("M11").Select<p/>
+<p>End Sub<p/>
+<br>
+<p>После этого я сделал макрос, который работает только для одного листа<p/>
+
+<p>If Worksheets(ActiveSheet.Name).Name = "Лист1" Then<p/>
+<p>Cells.Select<p/>
+<p>Range("K13").Activate<p/>
+<p>Selection.Font.Italic = True<p/>
+<p>Range("M11").Select<p/>
+<br>
+End If
+<br>
+End Sub
+  
+  </body>
+
+</html>
