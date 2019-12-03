@@ -82,33 +82,33 @@ position: fixed;
 function er() {
 var ab = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-document.getElementById("inf1").innerHTML = "десятков " + (ab - ab % 10) / 10 + "<br>единиц " + ab % 10 +
-"<br>их сумма=" + (ab % 10 + (ab - ab % 10) / 10)
-+ "<br>их произведение=" + (ab % 10 * (ab - ab % 10) / 10);
+document.getElementById("inf1").innerHTML = "Десятков " + (ab - ab % 10) / 10 + "<br>Единиц " + ab % 10 +
+"<br>Их сумма=" + (ab % 10 + (ab - ab % 10) / 10)
++ "<br>Их произведение=" + (ab % 10 * (ab - ab % 10) / 10);
 }
 function er1() {
 var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-document.getElementById("inf1").innerHTML = "единиц " + (abc % 10) + "<br>десятков " + ((abc - abc % 10) % 100/10) +
-"<br>их сумма=" + (abc % 10 + (abc - abc % 100)/100 + (abc - abc % 10) % 100/10) +
-"<br>их произведение=" + ((abc % 10)* ((abc - abc % 100)/100) *((abc - abc % 10) % 100/10));
+document.getElementById("inf1").innerHTML = "Единиц " + (abc % 10) + "<br>Десятков " + ((abc - abc % 10) % 100/10) +
+"<br>Их сумма=" + (abc % 10 + (abc - abc % 100)/100 + (abc - abc % 10) % 100/10) +
+"<br>Их произведение=" + ((abc % 10)* ((abc - abc % 100)/100) *((abc - abc % 10) % 100/10));
 }
 function er2() {
 var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-document.getElementById("inf1").innerHTML = "наоборот " + ((abc % 10)*10 + (abc - abc % 10) % 100/10)
+document.getElementById("inf1").innerHTML = "Наоборот " + ((abc % 10)*10 + (abc - abc % 10) % 100/10)
 + (abc - abc % 100)/100
 }
 function er3() {
 var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-document.getElementById("inf1").innerHTML = "с первой цифрой в конце " +
+document.getElementById("inf1").innerHTML = "С первой цифрой в конце " +
 ((abc - abc % 10) % 100/10) + (abc % 10) + (abc - abc % 100)/100
 }
 function er4() {
 var abc = Number(document.getElementById("var_in").value);
 document.getElementById("inf1").innerHTML ="";
-document.getElementById("inf1").innerHTML = "с последней цифрой в начале " + (abc % 10) + (abc - abc % 100)/100 +
+document.getElementById("inf1").innerHTML = "С последней цифрой в начале " + (abc % 10) + (abc - abc % 100)/100 +
 ((abc - abc % 10) % 100/10)
 }
 function er5() {
